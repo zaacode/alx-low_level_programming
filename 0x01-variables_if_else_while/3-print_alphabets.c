@@ -6,25 +6,15 @@
  */
 int main(void)
 {
-int nums;
-int nums1;
-int nums2;
+char abc;
 
-for (nums = '0'; nums <= '7'; nums++)
+for (abc = 'a'; abc <= 'z'; abc++)
 {
-for (nums1 = nums + 1; nums1 <= '9'; nums1++)
-{
-for (nums2 = nums1 + 1; nums2 <= '9'; nums2++)
-{
-putchar(nums);
-putchar(nums1);
-putchar(nums2);
-if (nums == '7' && nums1 == '8' && nums2 == '9')
-break;
-putchar(',');
-putchar(' ');
+putchar(abc);
 }
-}
+for (abc = 'A'; abc <= 'Z'; abc++)
+{
+putchar(abc);
 }
 putchar('\n');
 return (0);
