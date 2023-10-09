@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- *main - entry point
- *Return: Always 0 (success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -10,6 +10,10 @@ char abc;
 
 for (abc = 'a'; abc <= 'z'; abc++)
 {
+if (abc == 'q' || abc == 'e')
+{
+continue;
+}
 putchar(abc);
 }
 putchar('\n');

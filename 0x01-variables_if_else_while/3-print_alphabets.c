@@ -1,16 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- *main - entry point
- *Return: Always 0 (success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char abc;
+int nums;
+int nums1;
+int nums2;
 
-for (abc = 'a'; abc <= 'z'; abc++)
+for (nums = '0'; nums <= '7'; nums++)
 {
-putchar(abc);
+for (nums1 = nums + 1; nums1 <= '9'; nums1++)
+{
+for (nums2 = nums1 + 1; nums2 <= '9'; nums2++)
+{
+putchar(nums);
+putchar(nums1);
+putchar(nums2);
+if (nums == '7' && nums1 == '8' && nums2 == '9')
+break;
+putchar(',');
+putchar(' ');
+}
+}
 }
 putchar('\n');
 return (0);
